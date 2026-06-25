@@ -1,0 +1,104 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 44,
+    "spacing": 2,
+    "fixed-center": true,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "mpris"
+    ],
+
+    "modules-right": [
+        "memory",
+        "cpu",
+        "battery",
+        "network",
+        "pulseaudio",
+        "custom/notifications",
+        "custom/power",
+        "clock"
+    ],
+    
+    "custom/logo": {
+        "format": "",
+        "tooltip": false
+    },
+
+    "battery": {
+      "format": "{capacity}%"
+    },
+
+    "custom/theme": {
+        "format": "󰔎",
+        "tooltip": false,
+        "on-click": "~/.config/hypr/scripts/theme-menu.sh"
+    },
+
+    "custom/wallpaper": {
+        "format": "󰸉",
+        "tooltip": false,
+        "on-click": "~/.config/hypr/scripts/wallpaper-menu.sh"
+    },
+
+    "custom/settings": {
+        "format": "󰒓",
+        "tooltip": false,
+        "on-click": "~/.config/hypr/scripts/settings-menu.sh"
+    },
+
+    "custom/notifications": {
+        "format": "󰂚",
+        "tooltip": false,
+        "on-click": "swaync-client -t"
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+
+    "memory": {
+        "format": "󰍛 {}%"
+    },
+
+    "cpu": {
+        "format": "󰻠 {usage}%"
+    },
+
+    "network": {
+        "format-wifi": "󰤨",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤭"
+    },
+
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "on-click": "pavucontrol"
+    },
+
+    "clock": {
+        "format": " {:%H:%M}"
+    },
+
+    "mpris": {
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "󰏤 {dynamic}",
+        "dynamic-len": 40,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+    "hyprland/workspaces": {
+      "on-click": "activate",
+      "format": "{id}",
+      "all-outputs": true,
+      "disable-scroll": false,
+      "active-only": false
+    }
+}

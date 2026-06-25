@@ -1,0 +1,224 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 0;
+
+    transition-property: background-color, border-color;
+    transition-duration: .25s;
+}
+
+window#waybar {
+    background: transparent;
+    color: #c0caf5;
+}
+
+/* =========================
+   MÓDULOS
+   ========================= */
+
+#custom-logo,
+#workspaces,
+#window,
+#mpris,
+#memory,
+#cpu,
+#network,
+#pulseaudio,
+#clock,
+#custom-theme,
+#custom-wallpaper,
+#custom-settings,
+#custom-notifications,
+#custom-power {
+
+    background: rgba(36, 40, 59, 0.90);
+
+    color: #c0caf5;
+
+    border: 2px solid transparent;
+
+    border-radius: 14px;
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+    margin-left: 4px;
+    margin-right: 4px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+/* =========================
+   WORKSPACES
+   ========================= */
+
+#workspaces {
+    padding: 0 6px;
+}
+
+#workspaces button {
+    color: #7aa2f7;
+
+    border-radius: 10px;
+
+    padding: 0 10px;
+
+    margin: 4px 2px;
+
+    min-width: 28px;
+}
+
+#workspaces button:hover {
+    background: #414868;
+}
+
+#workspaces button.active {
+    background: #7aa2f7;
+    color: #1a1b26;
+}
+
+/* =========================
+   HOVER GLOBAL
+   ========================= */
+
+#memory:hover,
+#cpu:hover,
+#network:hover,
+#pulseaudio:hover,
+#clock:hover,
+#mpris:hover,
+#custom-theme:hover,
+#custom-wallpaper:hover,
+#custom-settings:hover,
+#custom-notifications:hover,
+#custom-power:hover,
+#custom-logo:hover {
+
+    background: #414868;
+}
+
+/* =========================
+   CORES DOS MÓDULOS
+   ========================= */
+
+#custom-logo {
+    color: #7aa2f7;
+}
+
+#memory {
+    color: #9ece6a;
+}
+
+#cpu {
+    color: #f7768e;
+}
+
+#network {
+    color: #7dcfff;
+}
+
+#pulseaudio {
+    color: #bb9af7;
+}
+
+#clock {
+    color: #c0caf5;
+}
+
+#custom-theme {
+    color: #bb9af7;
+}
+
+#custom-wallpaper {
+    color: #9ece6a;
+}
+
+#custom-settings {
+    color: #7dcfff;
+}
+
+#custom-notifications {
+    color: #e0af68;
+}
+
+#custom-power {
+    color: #f7768e;
+}
+
+/* =========================
+   MÚSICA
+   ========================= */
+
+#mpris {
+    color: #c0caf5;
+}
+
+/* =========================
+   JANELA ATIVA
+   ========================= */
+
+#window {
+    color: #7aa2f7;
+}
+
+/* =========================
+   TOOLTIPS
+   ========================= */
+
+tooltip {
+    background: #1a1b26;
+
+    border: 2px solid #7aa2f7;
+
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: #c0caf5;
+}
+
+/* =========================
+   ESTADOS ESPECIAIS
+   ========================= */
+
+#network.disconnected {
+    color: #f7768e;
+}
+
+#pulseaudio.muted {
+    color: #414868;
+}
+
+#battery.critical {
+    color: #f7768e;
+}
+
+/* =========================
+   EFEITO DE DESTAQUE
+   ========================= */
+
+#custom-power:hover {
+    border-color: #f7768e;
+}
+
+#custom-theme:hover {
+    border-color: #bb9af7;
+}
+
+#custom-wallpaper:hover {
+    border-color: #9ece6a;
+}
+
+#custom-settings:hover {
+    border-color: #7dcfff;
+}
+
+#custom-notifications:hover {
+    border-color: #e0af68;
+}
+
+#workspaces:hover {
+    border-color: #7aa2f7;
+}

@@ -1,0 +1,13 @@
+width=700
+height=400
+
+show=drun
+
+prompt=Apps
+
+allow_markup=true
+insensitive=true
+
+hide_scroll=true
+
+gtk_dark=true
